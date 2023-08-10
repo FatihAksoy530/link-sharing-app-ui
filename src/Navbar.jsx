@@ -13,13 +13,13 @@ export default function Navbar() {
                         <SiteLogo />
                     </li>
                     <li className="nav-links">
-                        <a className="links-btn" href="#"><span className="links-icon"><AttachFileIcon/></span><span className="link-text">Links</span></a>
+                        <a className="links-btn" href="#"><AttachFileIcon/><span className="link-text">Links</span></a>
                     </li>
                     <li className="nav-profile-details">
-                        <a className="profile-btn" href="#"><span className="account-icon"><AccountCircleIcon/></span><span className="link-text">Profile Details</span></a>
+                        <a className="profile-btn" href="#"><AccountCircleIcon/><span className="link-text">Profile Details</span></a>
                     </li>
                     <li className="nav-preview">
-                        <a className="preview-btn" href="#"><span className="visibility-icon"><VisibilityIcon/></span><span className="link-text">Preview</span></a>
+                        <a className="preview-btn" href="#"><VisibilityIcon/><span className="link-text">Preview</span></a>
                     </li>
                 </ul>
             </nav>

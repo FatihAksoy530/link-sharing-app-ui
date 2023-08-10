@@ -1,4 +1,10 @@
 :root {
-    --grey-background: hsl(217, 0%, 97%);
+    --grey-background: rgb(250,250,250);
     --purple-color: #5f2eff;
+    --light-gray: #969696;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
 }

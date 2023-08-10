@@ -10,7 +10,6 @@
 
 .content > div {
     background-color: white;
-    padding: 10px;
     border-radius: 0.2rem;
 }
 
@@ -19,6 +18,7 @@
     flex-direction: column;
     gap: 10px;
     overflow: auto;
+    padding: 3rem;
 }
 
 .new-links {
@@ -30,10 +30,21 @@
     font-weight: 600;
 }
 
+.links-content-description {
+    color: var(--light-gray);
+}
+
+.new-links:hover {
+    background-color: var(--purple-color);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
 @media (max-width: 600px) {
     .content {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 0.6fr 1fr;
         gap: 0;
     }
 }

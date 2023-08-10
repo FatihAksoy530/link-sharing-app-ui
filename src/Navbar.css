@@ -3,6 +3,7 @@
     --nav-link-padding: 0.5rem 1rem;
     --nav-link-font-weight: 600;
     --nav-link-border-radius: 0.2rem;
+    --nav-link-color: rgb(108,78,229);
 }
 
 a {
@@ -33,13 +34,20 @@ nav {
 
 .links-btn {
     text-decoration: none;
-    color: purple;
+    color: var(--nav-link-color);
     padding: var(--nav-link-padding);
-    background-color: rgb(243, 231, 255);
+    background-color: rgb(239,236,255);
     font-weight: var(--nav-link-font-weight);
     border-radius: var(--nav-link-border-radius);
     text-align: center;
     font-size: var(--nav-link-font-size);
+}
+
+.links-btn:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: var(--nav-link-color);
+    color: white;
 }
 
 .nav-profile-details {
@@ -57,6 +65,13 @@ nav {
     border-radius: var(--nav-link-border-radius);
 }
 
+.profile-btn:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: hsl(175, 5%, 50%);
+    color: white;
+}
+
 .nav-preview {
     display:flex;
     flex-direction: row-reverse;
@@ -66,11 +81,18 @@ nav {
 .preview-btn {
     padding: var(--nav-link-padding);
     border-radius: var(--nav-link-border-radius);
-    color: purple;
+    color: var(--nav-link-color);
     text-align: center;
     border-radius: var(--nav-link-border-radius);
-    border: 1px solid purple;
+    border: 1px solid var(--nav-link-color);
     font-weight: var(--nav-link-font-weight);
+}
+
+.preview-btn:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: var(--nav-link-color);
+    color: white;
 }
 
 .nav-logo {
@@ -78,10 +100,17 @@ nav {
     align-items: center;
 }
 
-.visibility-icon, .account-icon, .links-icon {
-    display: none;
+.navbar-navigation li a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
+#logo-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--nav-link-color);
+}
 
 
 @media (max-width: 600px) {
@@ -92,9 +121,5 @@ nav {
 
     .link-text, #logo-text {
         display: none;
-    }
-
-    .visibility-icon, .account-icon, .links-icon {
-        display: block;
     }
 }
